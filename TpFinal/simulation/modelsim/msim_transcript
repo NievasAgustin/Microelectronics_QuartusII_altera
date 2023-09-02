@@ -1,0 +1,105 @@
+# Reading C:/altera/14.1/modelsim_ase/tcl/vsim/pref.tcl
+# do top_run_msim_rtl_verilog.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim PE vmap 10.3c Lib Mapping Utility 2014.09 Sep 20 2014
+# vmap -modelsim_quiet work rtl_work 
+# Copying C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/14.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -sv -work work +incdir+C:/altera/14.1/quartus/bin64/micro1/TpFinal {C:/altera/14.1/quartus/bin64/micro1/TpFinal/alu.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:00:02 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/altera/14.1/quartus/bin64/micro1/TpFinal" C:/altera/14.1/quartus/bin64/micro1/TpFinal/alu.sv 
+# -- Compiling module alu
+# 
+# Top level modules:
+# 	alu
+# End time: 20:00:02 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vlog -sv -work work +incdir+C:/altera/14.1/quartus/bin64/micro1/TpFinal {C:/altera/14.1/quartus/bin64/micro1/TpFinal/top.sv}
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:00:02 on Nov 06,2019
+# vlog -reportprogress 300 -sv -work work "+incdir+C:/altera/14.1/quartus/bin64/micro1/TpFinal" C:/altera/14.1/quartus/bin64/micro1/TpFinal/top.sv 
+# -- Compiling module testbench
+# -- Compiling module top
+# -- Compiling module dmem
+# -- Compiling module imem
+# -- Compiling module arm
+# -- Compiling module controller
+# -- Compiling module decode
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# -- Compiling module datapath
+# -- Compiling module regfile
+# -- Compiling module extend
+# -- Compiling module adder
+# -- Compiling module flopenr
+# -- Compiling module flopr
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	testbench
+# End time: 20:00:02 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+vlog -reportprogress 300 -work work C:/altera/14.1/quartus/bin64/micro1/TpFinal/top.sv
+# Model Technology ModelSim ALTERA vlog 10.3c Compiler 2014.09 Sep 20 2014
+# Start time: 20:00:12 on Nov 06,2019
+# vlog -reportprogress 300 -work work C:/altera/14.1/quartus/bin64/micro1/TpFinal/top.sv 
+# -- Compiling module testbench
+# -- Compiling module top
+# -- Compiling module dmem
+# -- Compiling module imem
+# -- Compiling module arm
+# -- Compiling module controller
+# -- Compiling module decode
+# -- Compiling module condlogic
+# -- Compiling module condcheck
+# -- Compiling module datapath
+# -- Compiling module regfile
+# -- Compiling module extend
+# -- Compiling module adder
+# -- Compiling module flopenr
+# -- Compiling module flopr
+# -- Compiling module mux2
+# 
+# Top level modules:
+# 	testbench
+# End time: 20:00:12 on Nov 06,2019, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim work.testbench
+# vsim -gui "+altera" -l msim_transcript -do "top_run_msim_rtl_verilog.do" 
+# Start time: 20:00:14 on Nov 06,2019
+# Loading sv_std.std
+# Loading work.testbench
+# Loading work.top
+# Loading work.arm
+# Loading work.controller
+# Loading work.decode
+# Loading work.condlogic
+# Loading work.flopenr
+# Loading work.condcheck
+# Loading work.datapath
+# Loading work.mux2
+# Loading work.flopr
+# Loading work.adder
+# Loading work.regfile
+# Loading work.extend
+# Loading work.alu
+# Loading work.imem
+# Loading work.dmem
+add wave -position insertpoint sim:/testbench/dut/imem/#INITIAL#143/*
+run
+# Simulation succeeded
+# ** Note: $stop    : C:/altera/14.1/quartus/bin64/micro1/TpFinal/top.sv(104)
+#    Time: 205 ps  Iteration: 1  Instance: /testbench
+# Break in Module testbench at C:/altera/14.1/quartus/bin64/micro1/TpFinal/top.sv line 104
+# Break key hit
+# End time: 20:11:34 on Nov 06,2019, Elapsed time: 0:11:20
+# Errors: 0, Warnings: 0
